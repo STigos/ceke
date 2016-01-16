@@ -14,7 +14,7 @@
 <body class="">
 <div class="collapse" id="collapsingNav">
 
-    <h3 class="media-heading">контент</h3>
+    <h3 >контент</h3>
 
 </div>
 
@@ -23,7 +23,7 @@
             &#9776;
         </button>
         <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-    <a class="navbar-brand" href="index.php">Кейк</a>
+    <h2 class="navbar-brand" href="index.php">Кейк</h2>
 
         <ul class="nav navbar-nav">
             <li class="nav-item">
@@ -39,21 +39,17 @@
     </nav>
 <div class="container-fluid""
 <div class="row">
-    <div class="col-lg-4 col-lg-offset-4">
+    <div class="col-lg-4 col-lg-offset-4 col-mg-6 col-sm-12 bg-info">
         <form class="form" action="mailto:localhost@admin">
             <label for="text">Отправить письмо</label><input type="text" class="mail" name="text" size="">
             <input class="btn  btn-secondary-outline" type="submit" name="mai" value="Отправить">
         </form>
     </div>
-<div class="col-lg-4"><?php
-
-echo 'пробуем локальный сервер';
-?>
+<div class="col-lg-4  col-mg-6 col-sm-12">
+    <?php
+        echo 'пробуем локальный сервер';
+    ?>
 </div>
 </div>
-
-
-
-
 </body>
 </html>
