@@ -18,7 +18,7 @@
 
 </div>
 
-    <nav class="navbar navbar-light bg-inverse ">
+    <nav class="navbar navbar-light  ">
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
             &#9776;
         </button>
@@ -37,17 +37,27 @@
         </ul>
 
     </nav>
-<div class="container-fluid""
+<div class="container bg-faded""
 <div class="row">
-    <div class="col-lg-4 col-lg-offset-4 col-mg-6 col-sm-12 bg-info">
-        <form class="form" action="mailto:localhost@admin">
-            <label for="text">Отправить письмо</label><input type="text" class="mail" name="text" size="">
-            <input class="btn  btn-secondary-outline" type="submit" name="mai" value="Отправить">
-        </form>
-    </div>
+
 <div class="col-lg-4  col-mg-6 col-sm-12">
     <?php
-        echo 'пробуем локальный сервер';
+    $i = 0;
+    while (++$i) {
+        switch ($i) {
+            case 5:
+                echo "Итерация 5<br />\n";
+                break 1;  /* Выйти только из конструкции switch. */
+            case 10:
+                echo "Итерация 10; выходим<br />\n";
+                break 2;  /* Выходим из конструкции switch и из цикла while. */
+            default:
+                break;
+
+        }
+    }
+    
+
     ?>
 </div>
 </div>
