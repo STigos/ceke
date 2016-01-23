@@ -50,10 +50,26 @@
     </div><div class="col-lg-4  col-mg-6 col-sm-12">
     <form action="action.php" method="post">
         <div class="input-group-sm">
-            <input class="input-group" type="text" name="txt">
-            <button class="btn btn-sm btn-secondary-outline" type="submit">&#9</button>
+            <?php
+                include_once 'action.php';
+            echo MyFunc(12,34);
+                spl_autoload_call('MyClass');
+                $obj1 = new MyClass();
+               echo $obj1->MyClassfunc();
+                print ("\n");
+            ?>
         </div>
     </form>
+    </div>
+    <div class="col-lg-pull-6 col-lg6 col-md-4 col-sm-12">
+        <div class="card-block card-blockquote">
+            <div class="card">
+                <img class="card-img " src="images/">
+                <p class="card-header">Заголовок</p>
+                <p class="card-text">Текст расположенный на карте</p>
+                <button class="btn btn-success-outline card-success-outline">Отправить</button>
+            </div>
+        </div>
     </div>
 </div>
 </body>
